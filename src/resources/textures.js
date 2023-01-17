@@ -1,8 +1,10 @@
 //billboardTextures
 let billboardTextures = {};
 billboardTextures.terpSolutionsTexture = '../src/jsm/terpSolutions.png';
-billboardTextures.bagHolderBetsTexture = '../src/jsm/Bagholdersbetsbillboard.png';
-billboardTextures.homeSweetHomeTexture = '../src/jsm/home-sweet-home-portrait.png';
+billboardTextures.bagHolderBetsTexture =
+  '../src/jsm/Bagholdersbetsbillboard.png';
+billboardTextures.homeSweetHomeTexture = '../src/jsm/tech-show.jpg';
+billboardTextures.codeDojo = '../src/jsm/code-dojo.jpg';
 
 //box textures
 let boxTexture = {};
@@ -24,10 +26,11 @@ let woodTexture = '../src/jsm/woodTexture.jpg';
 
 //text
 let inputText = {};
-inputText.terpSolutionsText = '../src/jsm/terp-solutions-text.png';
-inputText.activities = '../src/jsm/activities_text.png';
-inputText.bagholderBetsText = '../src/jsm/bagholderbets-text.png';
-inputText.homeSweetHomeText = '../src/jsm/home-sweet-home-text.png';
+inputText.terpSolutionsText = '../src/jsm/code-dojo-text.png';
+inputText.activities = '../src/jsm/team-members.png';
+inputText.codeDojoText = '../src/jsm/code-dojo-text.png';
+inputText.bagholderBetsText = '../src/jsm/code-dojo-text.png';
+inputText.homeSweetHomeText = '../src/jsm/tech-show-text.png';
 inputText.staticPortfolio = '../src/jsm/static-portfolio.png';
 
 //SVG
@@ -36,7 +39,8 @@ SVG.reactLogo = '../src/jsm/react-svg.svg';
 
 //URLs
 let URL = {};
-URL.terpsolutions = 'https://web.archive.org/web/20200302001846/https://terpsolutions.com/';
+URL.terpsolutions =
+  'https://web.archive.org/web/20200302001846/https://terpsolutions.com/';
 URL.bagholderBets = 'https://bagholder-bets.herokuapp.com';
 URL.homeSweetHomeURL = 'https://github.com/0xFloyd/home-sweet-127.0.0.1';
 URL.gitHub = 'https://github.com/0xFloyd/Portfolio_2020';
@@ -44,6 +48,14 @@ URL.twitter = 'https://twitter.com/0xFloyd';
 URL.email = 'https://mailto:xfloyd.eth@gmail.com';
 URL.githubBagholder = 'https://github.com/0xFloyd/bagholder-bets';
 URL.githubHomeSweetHome = 'https://github.com/0xFloyd/home-sweet-127.0.0.1';
-URL.devTo = 'https://dev.to/0xfloyd/create-an-interactive-3d-portfolio-website-that-stands-out-to-employers-47gc';
+URL.devTo =
+  'https://dev.to/0xfloyd/create-an-interactive-3d-portfolio-website-that-stands-out-to-employers-47gc';
 
-export { billboardTextures, boxTexture, inputText, URL, stoneTexture, woodTexture };
+export {
+  billboardTextures,
+  boxTexture,
+  inputText,
+  URL,
+  stoneTexture,
+  woodTexture,
+};
