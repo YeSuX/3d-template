@@ -85,7 +85,7 @@ export function createWorld() {
 
 export function glowingParticles() {
   var particleTextureLoader = new THREE.TextureLoader(manager);
-  var particleTexture = particleTextureLoader.load('../src/jsm/spark.png');
+  var particleTexture = particleTextureLoader.load('https://yesux.github.io/3d-template/src/jsm/spark.png');
 
   particleGroup = new THREE.Object3D();
   particleGroup.position.x = -1;
@@ -233,9 +233,9 @@ export const generateGalaxy = () => {
       radius;
     const randomZ =
       Math.pow(Math.random(), parameters.randomnessPower) *
-        (Math.random() < 0.5 ? 1 : -1) *
-        parameters.randomness *
-        radius -
+      (Math.random() < 0.5 ? 1 : -1) *
+      parameters.randomness *
+      radius -
       50;
 
     positions[i3] = Math.cos(branchAngle) * radius;

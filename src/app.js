@@ -173,7 +173,7 @@ Ammo().then((Ammo) => {
     let mass = 3;
 
     var marble_loader = new THREE.TextureLoader(manager);
-    var marbleTexture = marble_loader.load('./src/jsm/dei.jpg');
+    var marbleTexture = marble_loader.load('https://yesux.github.io/3d-template/src/jsm/dei.jpg');
     marbleTexture.wrapS = marbleTexture.wrapT = THREE.RepeatWrapping;
     marbleTexture.repeat.set(1, 1);
     marbleTexture.anisotropy = 1;
@@ -377,7 +377,7 @@ Ammo().then((Ammo) => {
   function loadFloydText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load('https://yesux.github.io/3d-template/src/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
       var color = 0x11E4F1;
@@ -422,7 +422,7 @@ Ammo().then((Ammo) => {
   function loadEngineerText() {
     var text_loader = new THREE.FontLoader();
 
-    text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
+    text_loader.load('https://yesux.github.io/3d-template/src/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
       var color = 0x8111F1;
