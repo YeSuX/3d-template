@@ -173,7 +173,7 @@ Ammo().then((Ammo) => {
     let mass = 3;
 
     var marble_loader = new THREE.TextureLoader(manager);
-    var marbleTexture = marble_loader.load('./src/jsm/earth.jpg');
+    var marbleTexture = marble_loader.load('./src/jsm/dei.jpg');
     marbleTexture.wrapS = marbleTexture.wrapT = THREE.RepeatWrapping;
     marbleTexture.repeat.set(1, 1);
     marbleTexture.anisotropy = 1;
@@ -245,7 +245,7 @@ Ammo().then((Ammo) => {
 
     //import beach ball texture
     var texture_loader = new THREE.TextureLoader(manager);
-    var beachTexture = texture_loader.load('./src/jsm/BeachBallColor.jpg');
+    var beachTexture = texture_loader.load('./src/jsm/ee.jpg');
     beachTexture.wrapS = beachTexture.wrapT = THREE.RepeatWrapping;
     beachTexture.repeat.set(1, 1);
     beachTexture.anisotropy = 1;
@@ -380,7 +380,7 @@ Ammo().then((Ammo) => {
     text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
-      var color = 0xfffc00;
+      var color = 0x11E4F1;
 
       var textMaterials = [
         new THREE.MeshBasicMaterial({ color: color }), // front
@@ -411,6 +411,7 @@ Ammo().then((Ammo) => {
       text = new THREE.Mesh(geometry, textMaterials);
       text.position.z = -20;
       text.position.y = 0.1;
+      text.position.x = -10;
       text.receiveShadow = true;
       text.castShadow = true;
       scene.add(text);
@@ -424,14 +425,14 @@ Ammo().then((Ammo) => {
     text_loader.load('./src/jsm/Roboto_Regular.json', function (font) {
       var xMid, text;
 
-      var color = 0x00ff08;
+      var color = 0x8111F1;
 
       var textMaterials = [
         new THREE.MeshBasicMaterial({ color: color }), // front
         new THREE.MeshPhongMaterial({ color: color }), // side
       ];
 
-      var geometry = new THREE.TextGeometry('Be Alive, Keep Coding', {
+      var geometry = new THREE.TextGeometry('Engineering the future, Aim for excellence', {
         font: font,
         size: 1.5,
         height: 0.5,
@@ -999,7 +1000,7 @@ Ammo().then((Ammo) => {
       -80,
       1.25,
       -75,
-      billboardTextures.codeDojo,
+      billboardTextures.form,
       URL.terpsolutions,
       Math.PI * 0.15
     );
@@ -1008,7 +1009,7 @@ Ammo().then((Ammo) => {
       -45,
       1.25,
       -75,
-      billboardTextures.codeDojo,
+      billboardTextures.salon,
       URL.githubBagholder,
       Math.PI * 0.15
     );
@@ -1032,10 +1033,12 @@ Ammo().then((Ammo) => {
     );
 
     floydWords(16.2, 1, -20);
-    createTextOnPlane(-70, 0.01, -49, inputText.terpSolutionsText, 20, 40);
-    createTextOnPlane(-42, 0.01, -49, inputText.bagholderBetsText, 20, 40);
+    createTextOnPlane(-75, 0.01, -49, inputText.newsText, 25, 25);
+    createTextOnPlane(-42, 0.01, -48, inputText.salonText, 25, 25);
     createTextOnPlane(-14, 0.01, -49, inputText.codeDojoText, 20, 40);
     createTextOnPlane(15, 0.01, -49, inputText.homeSweetHomeText, 20, 40);
+    createTextOnPlane(67, 0.01, -30, inputText.error, 20, 40);
+    // createTextOnPlane(67, 0.01, -25, inputText.thanks, 20, 40);
 
     // createBox(
     //   12,
@@ -1094,7 +1097,11 @@ Ammo().then((Ammo) => {
     // floatingLabel(26.875, 4.5, -70, 'Email');
     // floatingLabel(35, 6.5, -70, '   How I \nmade this');
 
-    allSkillsSection(61, 0.03, 15, 50, 50, inputText.activities);
+    allSkillsSection(61, 0.03, 30, 50, 50, inputText.activities);
+    allSkillsSection(10, 0.03, 40, 30, 10, inputText.thanks);
+    allSkillsSection(10, 0.03, 55, 30, 10, inputText.dei);
+
+    allSkillsSection(-45, 0.03, 40, 50, 50, inputText.sx);
 
     //lensflare
     createLensFlare(50, -50, -800, 200, 200, boxTexture.lensFlareMain);
@@ -1114,11 +1121,18 @@ Ammo().then((Ammo) => {
     }
 
     simpleText(9, 0.01, 5, instructionsText, 1.25);
+    simpleText(55, 0.01, 10, 'Team Members', 3);
+    simpleText(-42, 0.01, -35, 'Engineering Workshop', 1.2);
+    simpleText(-42, 0.01, -30, 'Lead strategic tech investigation', 1, 0xBABABA);
+    simpleText(-75, 0.01, -35, 'Code Dojo', 1.2);
+    simpleText(-75, 0.01, -30, 'Engineering culture, Collaboration', 1, 0xBABABA);
+    simpleText(-55, 0.01, -10, 'Coming Soon~', 3, 0xEA3323);
+    simpleText(67, 0.01, -20, 'Break', 3, 0xEA3323);
 
     simpleText(23, 0.01, -60, touchText, 1.5);
     // simpleText(-50, 0.01, -5, 'SKILLS', 3);
     simpleText(-42, 0.01, -30, 'PROJECTS', 3);
-    simpleText(61, 0.01, -15, 'Team Members', 3);
+    // simpleText(9, 0.01, 5, 'Team Members', 3);
 
     wallOfBricks();
     createTriangle(63, -55);

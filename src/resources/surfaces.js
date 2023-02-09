@@ -1,13 +1,13 @@
 import * as THREE from "three";
 import { scene, manager } from "./world";
 
-export function simpleText(x, y, z, inputText, fontSize) {
+export function simpleText(x, y, z, inputText, fontSize, colorParam) {
   var text_loader = new THREE.FontLoader();
 
   text_loader.load("../src/jsm/Roboto_Regular.json", function (font) {
     var xMid, text;
 
-    var color = 0xffffff;
+    var color = colorParam || 0xffffff;
 
     var matLite = new THREE.MeshBasicMaterial({
       color: color,

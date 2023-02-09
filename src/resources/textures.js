@@ -5,6 +5,8 @@ billboardTextures.bagHolderBetsTexture =
   'https://yesux.github.io/3d-template/src/jsm/Bagholdersbetsbillboard.png';
 billboardTextures.homeSweetHomeTexture = 'https://yesux.github.io/3d-template/src/jsm/tech-show.jpg';
 billboardTextures.codeDojo = 'https://yesux.github.io/3d-template/src/jsm/code-dojo.jpg';
+billboardTextures.salon = 'https://yesux.github.io/3d-template/src/jsm/salon.jpg';
+billboardTextures.form = 'https://yesux.github.io/3d-template/src/jsm/form.jpg';
 
 //box textures
 let boxTexture = {};
@@ -29,6 +31,13 @@ let inputText = {};
 inputText.terpSolutionsText = 'https://yesux.github.io/3d-template/src/jsm/code-dojo-text.png';
 inputText.activities = 'https://yesux.github.io/3d-template/src/jsm/team-members.png';
 inputText.codeDojoText = 'https://yesux.github.io/3d-template/src/jsm/code-dojo-text.png';
+inputText.salonText = 'https://yesux.github.io/3d-template/src/jsm/salon-text.png';
+inputText.newsText = 'https://yesux.github.io/3d-template/src/jsm/news-text.png';
+inputText.error = 'https://yesux.github.io/3d-template/src/jsm/error.png';
+inputText.thanks = 'https://yesux.github.io/3d-template/src/jsm/thanks.png';
+inputText.dei = 'https://yesux.github.io/3d-template/src/jsm/dei.png';
+inputText.link = 'https://yesux.github.io/3d-template/src/jsm/link.png';
+inputText.sx = 'https://yesux.github.io/3d-template/src/jsm/sx.png';
 inputText.bagholderBetsText = 'https://yesux.github.io/3d-template/src/jsm/code-dojo-text.png';
 inputText.homeSweetHomeText = 'https://yesux.github.io/3d-template/src/jsm/tech-show-text.png';
 inputText.staticPortfolio = 'https://yesux.github.io/3d-template/src/jsm/static-portfolio.png';
@@ -40,16 +49,16 @@ SVG.reactLogo = 'https://yesux.github.io/3d-template/src/jsm/react-svg.svg';
 //URLs
 let URL = {};
 URL.terpsolutions =
-  'https://web.archive.org/web/20200302001846/https://terpsolutions.com/';
-URL.bagholderBets = 'https://bagholder-bets.herokuapp.com';
-URL.homeSweetHomeURL = 'https://github.com/0xFloyd/home-sweet-127.0.0.1';
-URL.gitHub = 'https://github.com/0xFloyd/Portfolio_2020';
-URL.twitter = 'https://twitter.com/0xFloyd';
-URL.email = 'https://mailto:xfloyd.eth@gmail.com';
-URL.githubBagholder = 'https://github.com/0xFloyd/bagholder-bets';
-URL.githubHomeSweetHome = 'https://github.com/0xFloyd/home-sweet-127.0.0.1';
+  '';
+URL.bagholderBets = '';
+URL.homeSweetHomeURL = '';
+URL.gitHub = '';
+URL.twitter = '';
+URL.email = '';
+URL.githubBagholder = '';
+URL.githubHomeSweetHome = '';
 URL.devTo =
-  'https://dev.to/0xfloyd/create-an-interactive-3d-portfolio-website-that-stands-out-to-employers-47gc';
+  '';
 
 export {
   billboardTextures,

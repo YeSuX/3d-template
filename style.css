@@ -10,6 +10,10 @@ body {
   overflow-y: hidden;
 }
 
+.sx-content div{
+  margin-bottom: 10px;
+}
+
 canvas {
   display: block;
   overscroll-behavior: none;
@@ -177,7 +181,7 @@ select {
 
 #start-button {
   margin: 0 auto;
-  margin-bottom: 20vh;
+  margin-bottom: 40px;
   font-size: 25px;
   background-color: grey;
   border: none;
