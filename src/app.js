@@ -976,8 +976,8 @@ Ammo().then((Ammo) => {
   startButton.addEventListener('click', startButtonEventListener);
 
   if (isTouchscreenDevice()) {
-    document.getElementById('appDirections').innerHTML =
-      'Use the joystick in the bottom left to move the ball. Please use your device in portrait orientation!';
+    // document.getElementById('appDirections').innerHTML =
+    //   'Use the joystick in the bottom left to move the ball. Please use your device in portrait orientation!';
     createJoystick(document.getElementById('joystick-wrapper'));
     document.getElementById('joystick-wrapper').style.visibility = 'visible';
     document.getElementById('joystick').style.visibility = 'visible';
@@ -1151,8 +1151,10 @@ Ammo().then((Ammo) => {
 
   //check if user's browser has WebGL capabilities
   if (WEBGL.isWebGLAvailable()) {
+    console.log('start');
     start();
   } else {
+    console.log('noWebGL');
     noWebGL();
   }
 });
